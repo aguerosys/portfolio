@@ -133,11 +133,11 @@
                 <div class="row">
                     <!-- Footer Location-->
                     <div class="col-lg-4 mb-5 mb-lg-0">
-                        <h4 class="text-uppercase mb-4">Location</h4>
+                        <h4 class="text-uppercase mb-4">¿De donde soy?</h4>
                         <p class="lead mb-0">
-                            Rio grande
+                            Rio grande,
                             <br />
-                            Tierra del fuego
+                            Tierra del fuego 9420
                         </p>
                     </div>
                     <!-- Footer Social Icons-->
