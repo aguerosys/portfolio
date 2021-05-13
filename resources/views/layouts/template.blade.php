@@ -110,10 +110,15 @@
                 </div>
                 <!-- Contact Section Form-->
 
-                <div class="row">
+                <div class="column">
 
-
-                    aguerolink@gmail.com
+                    <h5 class="text-center text-uppercase text-secondary mb-0">Email:</h5>
+                    <p class="text-center text-uppercase text-secondary mx-2" >aguerolink@gmail.com</p>
+                    
+                    <h5 class="text-center text-uppercase text-secondary mb-0">linkedin:</h5>
+                    <p class="text-center text-uppercase text-secondary mx-2" >linkedin.com/in/aguerodev</p>
+                    
+                   
 
 
                 </div>
