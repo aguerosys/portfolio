@@ -7,7 +7,7 @@
         <meta name="author" content="" />
         <title>AgueroDev - Portofolio</title>
         <!-- Favicon-->
-        
+        <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
         <!-- Font Awesome icons (free version)-->
         <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
         <!-- Google fonts-->
@@ -100,26 +100,66 @@
                 </div>
             </div>
         </section>
+
+        <section class="page-section">
+
+            <!-- About Section Heading-->
+            <h2 class="page-section-heading text-center text-uppercase text-secondary">habilidades</h2>
+            <!-- Icon Divider-->
+            <div class="divider-custom">
+                <div class="divider-custom-line"></div>
+                <div class="divider-custom-icon"><i class="fas fa-database"></i></div>
+                <div class="divider-custom-line"></div>
+            </div>
+
+            <div class="container">
+                <p class="text-uppercase ">JavaScript</p>
+                <div class="progress mb-2">
+                    <div class="progress-bar bg-gray progress-bar-striped"  role="progressbar" style="width: 35%" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <p class="text-uppercase">Git</p>
+                <div class="progress mb-2">
+                    <div class="progress-bar bg-secondary progress-bar-striped" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <p class="text-uppercase">MySQL</p>
+                <div class="progress mb-2">
+                    <div class="progress-bar bg-gray progress-bar-striped" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <p class="text-uppercase">Laravel</p>
+                <div class="progress mb-2">
+                    <div class="progress-bar bg-secondary progress-bar-striped" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <p class="text-uppercase">PHP</p>
+                <div class="progress mb-2">
+                    <div class="progress-bar bg-gray progress-bar-striped" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </div>
+
+        </section>
+
+
+
+
         <!-- Contact Section-->
-        <section class="page-section" id="contact">
+        <section class="page-section bg-info text-white" id="contact">
             <div class="container">
                 <!-- Contact Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">CONCTACTO</h2>
+                <h2 class="page-section-heading text-center text-uppercase mb-0 text-white">CONCTACTO</h2>
                 <!-- Icon Divider-->
-                <div class="divider-custom">
+                <div class="divider-custom divider-light">
                     <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-icon"><i class="fas fa-database"></i></div>
                     <div class="divider-custom-line"></div>
                 </div>
                 <!-- Contact Section Form-->
 
                 <div class="column">
 
-                    <h5 class="text-center text-uppercase text-secondary mb-0">Email:</h5>
-                    <p class="text-center text-uppercase text-secondary mx-2" >aguerolink@gmail.com</p>
+                    <h5 class="text-center text-uppercase text-white mb-0">Email:</h5>
+                    <p class="text-center text-uppercase text-white mx-2" >aguerolink@gmail.com</p>
                     
-                    <h5 class="text-center text-uppercase text-secondary mb-0">linkedin:</h5>
-                    <p class="text-center text-uppercase text-secondary mx-2" >linkedin.com/in/aguerodev</p>
+                    <h5 class="text-center text-uppercase text-white mb-0">linkedin:</h5>
+                    <p class="text-center text-uppercase text-white mx-2" >linkedin.com/in/aguerodev</p>
                     
                    
 
