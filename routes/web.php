@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\PostController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProyectoController;
 /*
@@ -15,6 +16,8 @@ use App\Http\Controllers\ProyectoController;
 Route::get('/', [App\Http\Controllers\PortfolioController::class, 'index'])->name('home');
 
 Route::resource('/proyectos', ProyectoController::class)->middleware('auth');
+
+Route::resource('/posts', PostController::class);
 
 
 
