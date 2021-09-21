@@ -1,5 +1,5 @@
 
-        @include('layouts.header')
+    @include('layouts.header')
 
         <div class="container">
 
@@ -27,3 +27,5 @@
                     
                 @endforeach
         </div>
+    @include('layouts.footer')
+

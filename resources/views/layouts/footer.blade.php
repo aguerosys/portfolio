@@ -1,5 +1,5 @@
 <!-- Contact Section-->
-<section class="page-section bg-info text-white" id="contact">
+<section class="page-section bg-info text-white mt-4" id="contact">
     <div class="container">
         <!-- Contact Section Heading-->
         <h2 class="page-section-heading text-center text-uppercase mb-0 text-white">CONCTACTO</h2>

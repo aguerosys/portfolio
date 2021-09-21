@@ -19,7 +19,7 @@ Route::get('/aboutme', [AboutmeController::class, 'index'])->name('aboutme');
 
 Route::resource('/proyectos', ProyectoController::class)->middleware('auth');
 
-Route::resource('/posts', PostController::class);
+Route::resource('/posts', PostController::class)->middleware('auth');
 
 Route::get('/', [BlogController::class, 'index'])->name('blog');
 
