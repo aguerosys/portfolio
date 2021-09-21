@@ -582,6 +582,7 @@ pre code {
 }
 .row {
   display: flex;
+  
   flex-wrap: wrap;
   margin-right: -1.5rem;
   margin-left: -1.5rem;
@@ -4352,6 +4353,26 @@ input[type=button].btn-block {
   color: #fff;
 }
 
+
+.img{
+  width: 200px;
+  height: 200px;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+.img:hover{
+  transform : scale(0.9);
+}
+.rowcard{
+  display: flex;
+  width: 100%;
+  margin-top: 20px;
+  
+}
+.text-created{
+  font-size: 13px;
+  text-align: end;
+}
 .card {
   position: relative;
   display: flex;
@@ -4362,6 +4383,12 @@ input[type=button].btn-block {
   background-clip: border-box;
   width: 70%;
   border-radius: 0.5rem;
+  cursor: pointer;
+  transition: 0.5s ease;
+  height: 200px;
+}
+.card:hover{
+  background-color: rgb(231, 231, 231);
 }
 .card > hr {
   margin-right: 0;

@@ -45,6 +45,10 @@ class ProyectoController extends Controller
     {
         request()->validate(Proyecto::$rules);
 
+        if ($request->hasFile('image')){
+            $request->file('image')->store('uploads', 'public');
+        }
+
         $proyecto = Proyecto::create($request->all());
 
         return redirect()->route('proyectos.index')

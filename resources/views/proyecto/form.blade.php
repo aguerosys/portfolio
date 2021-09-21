@@ -18,6 +18,7 @@
         </div>
         <div class="form-group">
             {{ Form::label('image') }}
+            {{ Form:: }}
             {{ Form::text('image', $proyecto->image, ['class' => 'form-control' . ($errors->has('image') ? ' is-invalid' : ''), 'placeholder' => 'Image']) }}
             {!! $errors->first('image', '<div class="invalid-feedback">:message</p>') !!}
         </div>

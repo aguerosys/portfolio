@@ -26,7 +26,7 @@ class Post extends Model
 		'user_id' => 'required',
 		'name' => 'required',
 		'content' => 'required',
-		'image' => 'required',
+		
     ];
 
     protected $perPage = 20;

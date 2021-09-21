@@ -15,7 +15,7 @@ class BlogController extends Controller
     public function index()
     {
         //
-        $posts = Post::paginate();
+        $posts = Post::paginate(5);
 
         return view('blog', compact('posts'));
 

@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Post;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 /**
  * Class PostController
@@ -45,7 +46,17 @@ class PostController extends Controller
     {
         request()->validate(Post::$rules);
 
-        $post = Post::create($request->all());
+        if ($request->hasFile('image')){
+            $dataimg=$request->file('image')->store('uploads', 'public');
+
+        }
+
+        $post = Post::create([
+            'user_id' => Auth::id(),
+            'name' => $request->name,
+            'content' => $request->content,
+            'image' => $dataimg
+        ]);
 
         return redirect()->route('posts.index')
             ->with('success', 'Post created successfully.');
