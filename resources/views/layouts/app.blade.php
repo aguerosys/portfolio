@@ -40,6 +40,14 @@
                                 </li>
                         @endif
 
+                        @if (Route::has('login'))
+                                <li class="nav-item">
+                                    <a class="nav-link" href="{{ route('posts.index') }}">{{ __('Posts') }}</a>
+                                </li>
+                        @endif
+
+                        
+
 
                     </ul>
 

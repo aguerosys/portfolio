@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\AboutmeController;
+use App\Http\Controllers\BlogController;
 use App\Http\Controllers\PostController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProyectoController;
@@ -13,13 +15,13 @@ use App\Http\Controllers\ProyectoController;
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::get('/', [App\Http\Controllers\PortfolioController::class, 'index'])->name('home');
+Route::get('/aboutme', [AboutmeController::class, 'index'])->name('aboutme');
 
 Route::resource('/proyectos', ProyectoController::class)->middleware('auth');
 
 Route::resource('/posts', PostController::class);
 
-
+Route::get('/', [BlogController::class, 'index'])->name('blog');
 
 Auth::routes();
 

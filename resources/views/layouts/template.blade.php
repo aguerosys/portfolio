@@ -18,111 +18,26 @@
     </head>
     <body id="page-top">
 
-        @extends('layouts.header')
-
-        <!-- Masthead-->
-        <header class="masthead bg-info text-white text-center">
-            <div class="container d-flex align-items-center flex-column">
-                <!-- Masthead Avatar Image-->
-                <img class="masthead-avatar mb-5 rounded-circle" src="assets/img/anonymus.jpg" alt="..." />
-                <!-- Masthead Heading-->
-                <h1 class="masthead-heading text-uppercase mb-0">AGUERODEV</h1>
-                <!-- Icon Divider-->
-                <div class="divider-custom divider-light">
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                    <div class="divider-custom-line"></div>
-                </div>
-                <!-- Masthead Subheading-->
-                <p class="masthead-subheading font-weight-light mb-0">SOFTWARE DEVELOPER - PHP - LARAVEL</p>
-            </div>
-        </header>
-        <!-- Portfolio Section-->
-        <section class="page-section portfolio" id="portfolio">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg bg-dark text-uppercase fixed-top" id="mainNav">
             <div class="container">
-
-            
-            
-                <!-- Portfolio Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Portfolio</h2>
-                <!-- Icon Divider-->
-                <div class="divider-custom">
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                    <div class="divider-custom-line"></div>
-                </div>
-                <!-- Portfolio Grid Items-->
-                <div class="row justify-content-center">
-
-                @yield('content')
-                    
-
-                    
+                <a class="navbar-brand js-scroll-trigger bg-nv-items" href="{{ route('blog') }}">AGUERODEV</a>
+                <button class="navbar-toggler navbar-toggler-right text-uppercase font-weight-bold bg-info text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger bg-nv-items" href="{{ route('aboutme') }}">SOBRE MI</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger bg-nv-items" href="#contact">CONTACTO</a></li>
+                        @auth
+                            <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger bg-nv-items" href="{{ url('/proyectos') }}">SUBIR PROYECTOS</a></li>
+                        @endauth
+                    </ul>
                 </div>
             </div>
-        </section>
-        <!-- About Section-->
-        <section class="page-section bg-info text-white mb-0" id="about">
-            <div class="container">
-                <!-- About Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-white">SOBRE MI</h2>
-                <!-- Icon Divider-->
-                <div class="divider-custom divider-light">
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                    <div class="divider-custom-line"></div>
-                </div>
-                <!-- About Section Content-->
-                <div class="row">
-                    <div class="col-lg-4 ml-auto"><p class="lead">Soy Agüero Brian Ezequiel recibido de Analista de Sistemas en CENT35 Rio Grande, Tierra del fuego, forme mi rumbo como programador hace aproximadamente 5 años incursionando como primer paso en Pascal</p></div>
-                    <div class="col-lg-4 mr-auto"><p class="lead">Lo cual me dio la iniciativa de encarar por el desarrollo web iniciando por el FrontEnd que me brindo la curiosidad de trasladarme al BackEnd. Actualmente desarrollo bajo el FrameWork Laravel y estoy convencido de que ¡nunca debes para de aprender!</p></div>
-                </div>
-                <!-- About Section Button-->
-                <div class="text-center mt-4">
-                   
-                </div>
-            </div>
-        </section>
-
-        <section class="page-section">
-
-            <!-- About Section Heading-->
-            <h2 class="page-section-heading text-center text-uppercase text-secondary">habilidades</h2>
-            <!-- Icon Divider-->
-            <div class="divider-custom">
-                <div class="divider-custom-line"></div>
-                <div class="divider-custom-icon"><i class="fas fa-database"></i></div>
-                <div class="divider-custom-line"></div>
-            </div>
-
-            <div class="container">
-                <p class="text-uppercase ">JavaScript</p>
-                <div class="progress mb-2">
-                    <div class="progress-bar bg-gray progress-bar-striped"  role="progressbar" style="width: 35%" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-                <p class="text-uppercase">Git</p>
-                <div class="progress mb-2">
-                    <div class="progress-bar bg-secondary progress-bar-striped" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-                <p class="text-uppercase">MySQL</p>
-                <div class="progress mb-2">
-                    <div class="progress-bar bg-gray progress-bar-striped" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-                <p class="text-uppercase">Laravel</p>
-                <div class="progress mb-2">
-                    <div class="progress-bar bg-secondary progress-bar-striped" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-                <p class="text-uppercase">PHP</p>
-                <div class="progress mb-2">
-                    <div class="progress-bar bg-gray progress-bar-striped" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-            </div>
-
-        </section>
-
-
-
-
+        </nav>
+    
         <!-- Contact Section-->
         <section class="page-section bg-info text-white" id="contact">
             <div class="container">
@@ -135,21 +50,16 @@
                     <div class="divider-custom-line"></div>
                 </div>
                 <!-- Contact Section Form-->
-
                 <div class="column">
 
                     <h5 class="text-center text-uppercase text-white mb-0">Email:</h5>
-                    <p class="text-center text-uppercase text-white mx-2" >aguerolink@gmail.com</p>
-                    
+                    <p class="text-center text-uppercase text-white mx-2" >aguerolink@gmail.com</p>          
                     <h5 class="text-center text-uppercase text-white mb-0">linkedin:</h5>
                     <p class="text-center text-uppercase text-white mx-2" >linkedin.com/in/aguerodev</p>
-                    
-                   
-
-
                 </div>
             </div>
         </section>
+
         <!-- Footer-->
         <footer class="footer text-center">
             <div class="container">
@@ -181,6 +91,7 @@
                 </div>
             </div>
         </footer>
+
         <!-- Copyright Section-->
         <div class="copyright py-4 text-center text-white">
             <div class="container">
@@ -199,9 +110,6 @@
         </div>
         <!-- Portfolio Modals-->
         
-
-
-
 
         <!-- Bootstrap core JS-->
         <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
